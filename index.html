@@ -1,0 +1,536 @@
+<!-- Html5 Standartı -->
+<!DOCTYPE html>
+
+<!-- Dil -->
+<html lang="en">
+
+<head>
+    <!-- dil karakterinde bozukluğu önlemek-->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Design-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Html5</title>
+    <meta name="author" content="Hamit Mızrak">
+    <meta name="keyword" content="html5">
+    <meta name="description" content="for html5 learning">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/1.png" type="image/x-icon">
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <noscript>Your browser doen not support JavaScript</noscript>
+    <!-- start codes -->
+
+    <!-- Intermedia Form and Table -->
+    <h1>Intermedia Form and Table</h1>
+    <form>
+        <hr>
+        <table>
+            <!-- name -->
+            <tr>
+                <td><label for="uname">ADINIZ:</label></td>
+                <td>
+                    <input 
+                    type="text" 
+                    id="uname"
+                    name="uname"
+                    required
+                    placeholder="Adınızı giriniz"
+                    title="Adınızı giriniz"
+                    autofocus
+                    >
+                </td>
+            </tr>
+
+            <!-- surname -->
+            <tr>
+                <td><label for="usurname">SOYADINIZ:</label></td>
+                <td> 
+                    <input 
+                    type="text" 
+                    id="usurname"
+                    name="usurname"
+                    required
+                    placeholder="Soyadınızı giriniz"
+                    title="Soyadınızı giriniz"
+                    >
+                </td>
+            </tr>
+
+            <!-- email -->
+            <tr>
+                <td><label for="uemail">EMAIL:</label></td>
+                <td> 
+                    <input 
+                    type="email" 
+                    id="uemail"
+                    name="uemail"
+                    required
+                    placeholder="Emailinizi giriniz"
+                    title="Emailinizi giriniz"
+                    >
+                </td>
+            </tr>
+
+            <!-- password -->
+            <tr>
+                <td><label for="upassword">PASSWORD:</label></td>
+                <td> 
+                    <input 
+                    type="password" 
+                    id="upassword"
+                    name="upassword"
+                    required
+                    placeholder="Şifrenizi giriniz"
+                    title="Şifrenizi giriniz"
+                    minlength="3"
+                    maxlength="10"
+                    pattern="[a-zA-Z0-9]{3,10}"
+                    >
+                </td>
+            </tr>
+
+             <!-- gender -->
+             <tr>
+                <td><label>GENDER:</label></td>
+                <td> 
+                    <input 
+                    type="radio" 
+                    id="female"
+                    name="gender"
+                    checked
+                    > Bayan
+
+                    <input 
+                    type="radio" 
+                    id="male"
+                    name="gender"
+                    > Erkek
+                </td>
+            </tr>
+
+             <!-- Date -->
+             <tr>
+                <td><label for="udate">DATE:</label></td>
+                <td> 
+                    <input 
+                    type="datetime-local" 
+                    id="udate"
+                    name="udate"
+                    > 
+                </td>
+            </tr>
+
+            <!-- button -->
+            <tr>
+                <td></label></td>
+                <td> <input type="reset">
+                    <button type="submit">Gönder</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+<hr>
+    <hr>
+    <!-- Basic Form and Table -->
+    <!-- Basic Form -->
+    <h1>Basic Form and Table</h1>
+    <form>
+        <hr>
+        <table>
+            <!-- name -->
+            <tr>
+                <td><label for="uname">ADINIZ:</label></td>
+                <td><input type="text" id="uname"></td>
+            </tr>
+
+            <!-- surname -->
+            <tr>
+                <td><label for="usurname">SOYADINIZ:</label></td>
+                <td> <input type="text" id="usurname"></td>
+            </tr>
+
+            <!-- email -->
+            <tr>
+                <td><label for="uemail">EMAIL:</label></td>
+                <td> <input type="text" id="uemail"></td>
+            </tr>
+
+            <!-- password -->
+            <tr>
+                <td><label for="upassword">PASSWORD:</label></td>
+                <td> <input type="text" id="upassword"></td>
+            </tr>
+
+            <!-- button -->
+            <tr>
+                <td></label></td>
+                <td> <input type="reset">
+                    <button type="submit">Gönder</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+
+
+
+
+    <!-- Basic Form -->
+    <h1>Basic Form</h1>
+    <form>
+        <!-- name -->
+        <div>
+            <label for="uname">ADINIZ:</label>
+            <input type="text" id="uname">
+        </div>
+
+        <!-- surname -->
+        <div>
+            <label for="usurname">SOYADINIZ:</label>
+            <input type="text" id="usurname">
+        </div>
+
+        <!-- email -->
+        <div>
+            <label for="uemail">EMAIL:</label>
+            <input type="text" id="uemail">
+        </div>
+
+        <!-- password -->
+        <div>
+            <label for="upassword">PASSWORD:</label>
+            <input type="text" id="upassword">
+        </div>
+
+        <!-- button -->
+        <div>
+            <input type="reset">
+            <button type="submit">Gönder</button>
+        </div>
+    </form>
+
+    <hr>
+    <!-- table -->
+    <table border="1" width="100%">
+        <colgroup>
+            <col span="1" style="background-color: lightgreen;">
+            Database Table
+        </colgroup>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ADI</th>
+                <th>SOYADI</th>
+                <th>TARİH</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Adı-1</td>
+                <td>Soyadı-1</td>
+                <td>Date-1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Adı-2</td>
+                <td>Soyadı-2</td>
+                <td>Date-2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">&copy; Bütün haklar saklıdır.</th>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <br><br><br><br>
+
+    <!-- table -->
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ADI</th>
+                <th>SOYADI</th>
+                <th>TARİH</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Adı-1</td>
+                <td>Soyadı-1</td>
+                <td>Date-1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Adı-2</td>
+                <td>Soyadı-2</td>
+                <td>Date-2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">&copy; Bütün haklar saklıdır.</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <!-- Audio -->
+    <audio width="100%" height="250" controls>
+        <source src="../xyz.mp3" type="audio/mp3">
+        <source src="../xyz.ogg" type="audio/ogg">
+    </audio>
+
+    <hr>
+    <!-- video -->
+    <video width="100%" height="250" controls>
+        <source src="../xyz.mp4" type="video/mp4">
+        <source src="../xyz.ogg" type="video/ogg">
+    </video>
+
+    <hr>
+    <!-- List -->
+    <!-- Tanımlı liste() -->
+    <dl>
+        <dt>Frontend</dt>
+        <dd>Html5</dd>
+        <dd>Css3</dd>
+
+        <br>
+        <dt>Backend</dt>
+        <dd>Java</dd>
+        <dd>Node js</dd>
+    </dl>
+    <hr>
+    <!-- Düzensiz liste(Unordered List) -->
+    <!-- ul>li{item - $}*4 -->
+    <ul>
+        <li>item - 1</li>
+        <li>item - 2</li>
+        <li>item - 3</li>
+        <li>item - 4</li>
+    </ul>
+
+    <hr>
+    <!-- Düzenli liste(Ordered List) -->
+    <!-- ol>li{item - $}*4 -->
+    <ol start="5" type="i">
+        <li>item - 1</li>
+        <li>item - 2</li>
+        <li>item - 3</li>
+        <li>item - 4</li>
+    </ol>
+    <ol type="I">
+        <li>item - 1</li>
+        <li>item - 2</li>
+        <li>item - 3</li>
+        <li>item - 4</li>
+    </ol>
+    <ol type="i">
+        <li>item - 1</li>
+        <li>item - 2</li>
+        <li>item - 3</li>
+        <li>item - 4</li>
+    </ol>
+    <ol type="A">
+        <li>item - 1</li>
+        <li>item - 2</li>
+        <li>item - 3</li>
+        <li>item - 4</li>
+    </ol>
+    <ol type="a">
+        <li>item - 1</li>
+        <li>item - 2</li>
+        <li>item - 3</li>
+        <li>item - 4</li>
+    </ol>
+
+    <ol>
+        <li>item - 1</li>
+        <li>item - 2</li>
+        <li>item - 3</li>
+        <li>item - 4</li>
+    </ol>
+
+    <!-- favicon -->
+    <!-- Iframe -->
+    <iframe src="https://www.google.com" width="100%" height="400" frameborder="1" scrolling="no" marginheight="0"
+        marginwidth="0">
+        <!-- Map -->
+        <div style="width: 100%">
+            <iframe width="100%" height="200" frameborder="1" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=istanbul+amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe>
+        </div>
+        <hr>
+        <!-- Link -->
+        <a href="https://www.google.com" target="_blank">Google</a> <br>
+
+        <!-- email Link -->
+        <a href="mailto:xyz@com">Send Mail</a><br>
+
+        <!-- Telephone Link -->
+        <a href="tel:+90111222334455">Call Me !</a><br>
+
+        <!-- Whatsapp Link -->
+        <a href="https://wa.me/+90111222334455?Size nasıl yardmcı olabilirim ">Business Whatsapp Hattı !</a><br>
+
+        <hr>
+        <!-- Google Font -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit accusamus quam. Esse sunt nobis quaerat
+            placeat id harum fugit. Mollitia quos reprehenderit ab vero doloribus fuga, assumenda nostrum quis.
+            Laborum exercitationem, fugit magnam nostrum rerum repellat? Maxime aliquam exercitationem quibusdam,
+            numquam
+            placeat possimus est quasi officiis, voluptas labore corrupti id. Expedita blanditiis placeat ab commodi
+            beatae,
+            deleniti vero voluptas.</p>
+
+        <!-- Emoji -->
+        <p>&#128042</p>
+        <p> &#128040</p>
+        <hr>
+        <!-- datalist -->
+        <input list="lists" name="backend">
+        <datalist id="lists" />
+        <option value="Java SE" />
+        <option value="Java EE" />
+        <option value="Web Servis" />
+        <option value="Spring Boot" />
+        </datalist>
+        <hr>
+
+        <!-- optional -->
+        <select name="frontend3" id="frontend3" multiple disabled>
+            <option value="0">Seçiniz</option>
+            <option value="1">Html5</option>
+            <option value="2">Css3</option>
+            <option value="3">JS</option>
+            <option value="4">React JS</option>
+        </select>
+
+        <!-- optional -->
+        <select name="frontend1" id="frontend1" multiple>
+            <option value="0">Seçiniz</option>
+            <option value="1">Html5</option>
+            <option value="2">Css3</option>
+            <option value="3">JS</option>
+            <option value="4">React JS</option>
+        </select>
+
+        <!-- optional -->
+        <select name="frontend2" id="frontend2">
+            <option value="0">Seçiniz</option>
+            <option value="1">Html5</option>
+            <option value="2">Css3</option>
+            <option value="3">JS</option>
+            <option value="4">React JS</option>
+        </select>
+
+        <hr>
+        <!-- link+image -->
+        <a href="https://www.google.com" target="_blank">
+            <img src="img/1.jpg" alt="it isn't picture all here" width="100%" height="50%" title="TEST"> <br>
+        </a>
+
+        <hr>
+        <!-- image -->
+        <img src="img/1.jpg" alt="it isn't picture all here"> <br>
+        <img src="img/2.jpg" alt="it isn't picture all here" width="100%" height="50%"> <br>
+        <img src="img/3.jpg" alt="it isn't picture all here" width="100%" height="50%" title="Örnek Title Değeri"> <br>
+
+        <hr>
+        <!-- link -->
+        <a href="https://www.google.com">Google</a> <br>
+        <a href="https://www.google.com" target="_blank">Goggle Blank Page</a>
+        <hr>
+        <!-- formatter -->
+        <b>bold</b> <br>
+        <i>italic</i> <br>
+        <big>big</big> <br>
+        <strong>strong</strong> <br>
+        <em>Vurgulama</em> <br>
+        10<sup>5</sup> <br>
+        log<sub>2</sub>n <br>
+        <mark>Merhabalar mark</mark> <br>
+        <code>print codes</code> <br>
+        <del>100</del>TL 99 TL <br>
+        <u>important</u> <br>
+        <ins>important</ins> <br>
+        <hr>
+        <b>
+            <i>
+                <strong>
+                    <code>
+                <ins>
+                    <mark>
+                        Formatter all in
+                    </mark>
+                </ins>
+            </code>
+                </strong>
+            </i>
+        </b>
+
+
+        <hr>
+        <!-- h${Heading-$}*6 -->
+        <h1>Heading-1</h1>
+        <h2>Heading-2</h2>
+        <h3>Heading-3</h3>
+        <h4>Heading-4</h4>
+        <h5>Heading-5</h5>
+        <h6>Heading-6</h6>
+
+        <hr>
+        <!-- paragraf -->
+        <p>Merhabalar Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas maxime alias modi, minus quae nemo
+            dicta, facere ea animi, ab aliquam labore. Quam illo eligendi nam dignissimos in. Id, earum.
+            Sequi inventore aliquid consequuntur, in earum ut vel veniam dolorum vero, tempore, beatae quia.
+            Voluptatibus
+            odio velit dolorum ratione, doloremque laboriosam, beatae neque harum cum corrupti ab libero quas possimus?
+        </p>
+
+        <hr>
+        <br>
+        <br>
+        <!-- font -->
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <!-- start semantic -->
+        <header></header>
+        <main></main>
+        <footer></footer>
+        <!-- end semantic -->
+
+        <!-- end codes -->
+</body>
+
+</html>
